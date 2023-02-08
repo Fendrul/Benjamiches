@@ -64,4 +64,8 @@ public class SandwichService {
 
         return true;
     }
+
+    public List<SandwichDTO> getByDiet(long diet) {
+        return sandwichRepo.findByDietId(diet).stream().map(SandwichDTO::from).toList();
+    }
 }

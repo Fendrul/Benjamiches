@@ -1,7 +1,6 @@
 package be.technifutur.Benjamiches.utils;
 
 import be.technifutur.Benjamiches.exceptions.RessourceNotFound;
-import be.technifutur.Benjamiches.model.dto.SandwichDTO;
 import be.technifutur.Benjamiches.model.entities.*;
 import be.technifutur.Benjamiches.model.entities.enums.Units;
 import be.technifutur.Benjamiches.repositories.DietRepository;
@@ -37,52 +36,52 @@ public class DataInit implements InitializingBean {
         //add some ingredients
         Ingredient ingredient = new Ingredient();
         ingredient.setName("Pain");
-        ingredient.setUnit(Units.PIECE);
+        ingredient.setUnit(Units.pièce);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Pain sans gluten");
-        ingredient.setUnit(Units.PIECE);
+        ingredient.setUnit(Units.pièce);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Jambon");
-        ingredient.setUnit(Units.GRAMME);
+        ingredient.setUnit(Units.gramme);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Fromage");
-        ingredient.setUnit(Units.GRAMME);
+        ingredient.setUnit(Units.gramme);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Thon");
-        ingredient.setUnit(Units.GRAMME);
+        ingredient.setUnit(Units.gramme);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Mayo");
-        ingredient.setUnit(Units.CAS);
+        ingredient.setUnit(Units.càs);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Curry");
-        ingredient.setUnit(Units.CAC);
+        ingredient.setUnit(Units.càc);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Poulet");
-        ingredient.setUnit(Units.GRAMME);
+        ingredient.setUnit(Units.gramme);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Tomate");
-        ingredient.setUnit(Units.PIECE);
+        ingredient.setUnit(Units.pièce);
         ingredientRepo.save(ingredient);
 
         ingredient = new Ingredient();
         ingredient.setName("Oignon");
-        ingredient.setUnit(Units.PIECE);
+        ingredient.setUnit(Units.pièce);
         ingredientRepo.save(ingredient);
 
         //add some diets

@@ -14,6 +14,7 @@ import java.util.Map;
 @Builder
 public class SandwichDTO {
 
+    private long id;
     private String name;
     private String description;
     private double price;
@@ -32,6 +33,7 @@ public class SandwichDTO {
             return null;
 
         return SandwichDTO.builder()
+                .id(entity.getId())
                 .name(entity.getName())
                 .description(entity.getDescription())
                 .price(entity.getPrice())
